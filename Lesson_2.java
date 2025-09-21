@@ -15,7 +15,7 @@ public class Lesson_2 {
 
         Park park1 = new Park("Woodland");
         park1.attraction = park1.new Attraction("колесо обозрения", "12-15", 500);
-        System.out.println(park1.attraction.name);
+        System.out.println("Park: " + park1.parkName + ", Attraction: " + park1.attraction.name);
     }   
 
     public static class Park {

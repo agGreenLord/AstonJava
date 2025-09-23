@@ -1,3 +1,4 @@
+package Lesson_2;
 public class Product {
     private String name;
            private String dateOfProduction;

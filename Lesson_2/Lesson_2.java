@@ -1,4 +1,4 @@
-
+package Lesson_2;
 
 public class Lesson_2 {
     public static void main(String[] args){
@@ -15,27 +15,7 @@ public class Lesson_2 {
 
         Park park1 = new Park("Woodland");
         park1.attraction = park1.new Attraction("колесо обозрения", "12-15", 500);
-        System.out.println("Park: " + park1.parkName + ", Attraction: " + park1.attraction.name);
+        System.out.println("Park: " + park1.getParkName() + ", Attraction: " + park1.attraction.getName());
     }   
 
-    public static class Park {
-        private String parkName;
-        public Attraction attraction;
-
-        public Park (String _name){
-            parkName = _name;
-        }
-        
-        public class Attraction{
-            private String name;
-            private String workTime;
-            private int price;
-            public Attraction(String _name, String _workTime, int _price){
-                name = _name;
-                workTime = _workTime;
-                price = _price;
-            }
-        }
-
-    }
 }

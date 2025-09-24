@@ -8,10 +8,18 @@ public class Lesson_4 {
         {"3","4","3","6"},
         {"1","2","3","4"} };
         try {
-        vallidateMassiv(array);
+            for (int i = 0; i < 6; i++) {
+                System.out.println(array[i]);
+            }
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println(e.getMessage());
+        } 
+        try {
+            vallidateMassiv(array);
         } catch (MyArraySizeExeption e) {
             System.out.println(e.getMessage());
         }
+        
         }
 
     public static int vallidateMassiv(String[][] array) throws MyArraySizeExeption, MyArrayDataException {

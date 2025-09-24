@@ -41,7 +41,7 @@ public class Lesson_1 {
         public static void printColor(int value){
             if (value <=0){
                 System.out.println("Красный");
-            } else if (0 < value && value <= 100) {
+            } else if (value <= 100) {
                 System.out.println("Желтый");
             } else {
                 System.out.println("Зеленый");
@@ -134,12 +134,12 @@ public class Lesson_1 {
                     System.out.println();
                 }
             }
-            public static void createMassive(int len, int value) {
+            public static String createMassive(int len, int value) {
                 int[] nums = new int[len];
                 for (int i = 0; i < len; i++) {
                     nums[i] = value;
                 }
-                System.out.println(Arrays.toString(nums));
+                return Arrays.toString(nums);
 
             }
 
